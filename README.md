@@ -10,7 +10,13 @@
 - MySQL
 - SSM
 - SpringBoot
-
+- LLM
+- 对话记忆
+- 流式输出
+- RAG
+- 向量存储库
+- 提示词工程prompt
+  
 ## 实现b站项目小智医疗：
    https://www.bilibili.com/video/BV1cpLTz1EVp/?spm_id_from=333.337.search-card.all.click&vd_source=65e57e353e5dcc7156a1676a51972f12
 
