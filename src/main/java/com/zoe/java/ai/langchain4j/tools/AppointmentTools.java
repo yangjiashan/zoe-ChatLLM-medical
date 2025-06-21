@@ -14,7 +14,7 @@ public class AppointmentTools {
     private AppointmentService appointmentService;
 
 
-    @Tool(name="预约挂号", value = "根据参数，先执行工具方法queryDepartment查询是否可预约，并直接给用户回答是否可预约，" +
+    @Tool(name="book_appointment", value = "根据参数，先执行工具方法queryDepartment查询是否可预约，并直接给用户回答是否可预约，" +
             "并让用户确认所有预约信息，用户确认后再进行预约。如果用户没有提供具体的医生姓名，请从向量存储中找到一位医生。")
     public String bookAppointment(Appointment appointment){
 
@@ -33,7 +33,7 @@ public class AppointmentTools {
         return "您在相同的科室和时间已有预约";
     }
 
-    @Tool(name="取消预约挂号", value = "根据参数，查询预约是否存在，如果存在则删除预约记录并返回取消预约成功，否则返回取消预约失败")
+    @Tool(name="cancel_appointment", value = "根据参数，查询预约是否存在，如果存在则删除预约记录并返回取消预约成功，否则返回取消预约失败")
     public String cancelAppointment(Appointment appointment){
 
         Appointment appointmentDB = appointmentService.getOne(appointment);
@@ -51,7 +51,7 @@ public class AppointmentTools {
     }
 
 
-    @Tool(name = "查询是否有号源", value="根据科室名称，日期，时间和医生查询是否有号源，并返回给用户")
+    @Tool(name = "query_department", value="根据科室名称，日期，时间和医生查询是否有号源，并返回给用户")
     public boolean queryDepartment(
             @P(value = "科室名称") String name,
             @P(value = "日期") String date,

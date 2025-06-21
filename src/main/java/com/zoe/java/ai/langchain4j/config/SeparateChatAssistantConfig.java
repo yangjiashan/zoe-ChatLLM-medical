@@ -19,10 +19,9 @@ public class SeparateChatAssistantConfig {
     ChatMemoryProvider chatMemoryProvider() {
         return memoryId -> MessageWindowChatMemory.builder()
                 .id(memoryId)
-            	.maxMessages(10)
-                //.chatMemoryStore(new InMemoryChatMemoryStore())
+                .maxMessages(10)
+//                .chatMemoryStore(new InMemoryChatMemoryStore())
                 .chatMemoryStore(mongoChatMemoryStore)//配置持久化对象
                 .build();
     }
-}//这里其实是一个匿名内部类，需要重写接口的方法，
-// 返回一个MessageWindowChatMemory对象，memoryId是输入参数
+}
