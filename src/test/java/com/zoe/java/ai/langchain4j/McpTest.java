@@ -41,7 +41,6 @@ public class McpTest {
 //        McpTransport transport = new StdioMcpTransport.Builder()
 ////                .command(List.of("/usr/local/bin/docker", "run", "-e", "GITHUB_PERSONAL_ACCESS_TOKEN", "-i", "mcp/github"))
 //                .command(List.of("npx.cmd", "-y", "@modelcontextprotocol/server-github"))
-////                .environment(Map.of("GITHUB_PERSONAL_ACCESS_TOKEN", ""))
 //                .logEvents(true)
 //                .build();
 //
