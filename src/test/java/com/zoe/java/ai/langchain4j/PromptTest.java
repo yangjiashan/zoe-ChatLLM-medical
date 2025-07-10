@@ -38,13 +38,13 @@ public class PromptTest {
 
     @Test
     public void testUserMessage() {
-        String answer1 = memoryChatAssistant.chat("我是zoe");
+        String answer1 = memoryChatAssistant.chat1("我是zoe");
         System.out.println(answer1);
 
-        String answer2 = memoryChatAssistant.chat("我24岁");
+        String answer2 = memoryChatAssistant.chat1("我24岁");
         System.out.println(answer2);
 
-        String answer3 = memoryChatAssistant.chat("你知道我是谁吗");
+        String answer3 = memoryChatAssistant.chat1("你知道我是谁吗");
         System.out.println(answer3);
     }
 

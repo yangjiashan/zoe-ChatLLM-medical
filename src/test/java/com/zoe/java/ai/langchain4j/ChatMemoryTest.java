@@ -75,9 +75,9 @@ public class ChatMemoryTest {
     private MemoryChatAssistant memoryChatAssistant;
     @Test
     public void testChatMemory4() {
-        String answer1 = memoryChatAssistant.chat("我是zoe");
+        String answer1 = memoryChatAssistant.chat1("我是zoe");
         System.out.println(answer1);
-        String answer2 = memoryChatAssistant.chat("我是谁");
+        String answer2 = memoryChatAssistant.chat2("我是谁");
         System.out.println(answer2);
     }
 

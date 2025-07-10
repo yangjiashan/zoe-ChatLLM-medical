@@ -12,8 +12,8 @@ import static dev.langchain4j.service.spring.AiServiceWiringMode.EXPLICIT;
         streamingChatModel = "openAiStreamingChatModel",
         chatMemoryProvider = "chatMemoryProviderZoe",
         tools = "appointmentTools", //tools配置
-//        contentRetriever = "contentRetrieverzoe" //配置向量存储
-        contentRetriever = "contentRetrieverZoePincone"
+        contentRetriever = "contentRetrieverzoe" //配置向量存储
+//        contentRetriever = "contentRetrieverZoePincone"
 )
 
 
